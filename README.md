@@ -21,3 +21,5 @@ Would help us?
 ==========
 
 Clone repo, make changes and create pull request. Or, attach diff to our issue tracker. Also, you can help us with ideas or report bigs. Click to [Issues](https://github.com/1st/django-startup/issues) in top side of this page.
+
+Star project, if you like it.
