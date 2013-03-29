@@ -1,0 +1,8 @@
+#
+# List of dependencies for Python and Django.
+# 
+# To install it, run command in terminal:
+# > pip install -r requirements.txt
+#
+
+Django==1.4.5
