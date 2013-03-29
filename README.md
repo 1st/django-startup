@@ -7,7 +7,7 @@ Pretty and easy to use tools that helps you start project not from scratch, but 
 
 For each version of Django framework we have separate branch that name equal to Django version (1.4, 1.5, 1.6).
 
-What included
+What's inside?
 ==========
 
 * **Python decorators:** render_to, ajax
@@ -18,7 +18,7 @@ What included
 * read more in our [wiki](https://github.com/1st/django-startup/wiki)
 
 
-Would help us?
+Do you have free time to help us?
 ==========
 
 Clone repo, make changes and create pull request. Or, attach diff to our issue tracker. Also, you can help us with ideas or report bigs. Click to [Issues](https://github.com/1st/django-startup/issues) in top side of this page.
