@@ -15,6 +15,7 @@ What included
 * **Users support:** registration via email, nic name without email, or via social authentication
 * **CSS, JS:** jQuery, SASS, [django-pipeline](http://django-pipeline.readthedocs.org)
 * **AJAX support:** RESTful API, JSON-RPC
+* read more in our [wiki](https://github.com/1st/django-startup/wiki)
 
 
 Would help us?
