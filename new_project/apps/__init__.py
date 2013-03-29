@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 This is new Django project.
 

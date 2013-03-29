@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 Urls definition for this project (full site map).
 

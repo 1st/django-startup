@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 '''
 Use this application as source to create new applications.
 
@@ -14,7 +15,3 @@ How to create new application:
  - create tests in tests.py
  - follow instruction from "apps/__init__.py"
 '''
-
-
-def index(request):
-    pass
