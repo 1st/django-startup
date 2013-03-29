@@ -10,11 +10,11 @@ For each version of Django framework we have separate branch that name equal to 
 What included
 ==========
 
-* Python decorators: render_to, ajax
-* Django templates: build on Twitter Bootstrap
-* Users support: registration via email, nic name without email, or via social authentication
-* CSS, JS: jQuery, SASS, [django-pipeline](http://django-pipeline.readthedocs.org)
-* AJAX support: RESTful API, JSON-RPC
+* **Python decorators:** render_to, ajax
+* **Django templates:** build on Twitter Bootstrap
+* **Users support:** registration via email, nic name without email, or via social authentication
+* **CSS, JS:** jQuery, SASS, [django-pipeline](http://django-pipeline.readthedocs.org)
+* **AJAX support:** RESTful API, JSON-RPC
 
 
 Would help us?
