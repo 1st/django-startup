@@ -25,7 +25,7 @@ You can help us with:
 * Clone repo and make changes (look at [list of tasks and bugs](https://github.com/1st/django-startup/issues)). Then create [pull request](https://github.com/1st/django-startup/pulls) or attach diff of your changes to our [issue tracker](https://github.com/1st/django-startup/issues)
 * Report about bugs that you found. Create bug report in [issue tracker](https://github.com/1st/django-startup/issues)
 * You can help us with ideas. Describe it in our [issue tracker](https://github.com/1st/django-startup/issues)
-* Add your questions and propositions to exisitng [issues](https://github.com/1st/django-startup/issues). We will disscuss with you about best solution for this task
+* Add your questions and propositions to exisitng [issues](https://github.com/1st/django-startup/issues). We will discuss with you about best solution for this task
 * Star project, and tell you friends about this project, if you like it :-)
 
 Thank you!<br>
