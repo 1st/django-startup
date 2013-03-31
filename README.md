@@ -30,4 +30,4 @@ You can help us with:
 * Star project, and tell you friends about this project, if you like it :-)
 
 Thank you!
-- Anton Danilchenko
+Anton Danilchenko
