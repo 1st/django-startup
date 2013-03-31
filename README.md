@@ -22,11 +22,10 @@ Do you have free time to help us?
 ---------
 
 You can help us with:
-* Clone repo and make changes. Then create [pull request](https://github.com/1st/django-startup/pulls)
-* Attach diff of your changes to our [issue tracker](https://github.com/1st/django-startup/issues)
+* Clone repo and make changes (look at [list of tasks and bugs](https://github.com/1st/django-startup/issues)). Then create [pull request](https://github.com/1st/django-startup/pulls) or attach diff of your changes to our [issue tracker](https://github.com/1st/django-startup/issues)
+* Report about bugs that you found. Create bug report in [issue tracker](https://github.com/1st/django-startup/issues)
 * You can help us with ideas. Describe it in our [issue tracker](https://github.com/1st/django-startup/issues)
-* Report about bags that you found. Create bug report in [issue tracker](https://github.com/1st/django-startup/issues)
-* Do you have time to solve already described task? Select your task from [issue tracker](https://github.com/1st/django-startup/issues) and solve it. All your ideas and questions attach to exisitng task, and we will disscuss with you about best solution for this task
+* Add your questions and propositions to exisitng [issues](https://github.com/1st/django-startup/issues). We will disscuss with you about best solution for this task
 * Star project, and tell you friends about this project, if you like it :-)
 
 Thank you!<br>
