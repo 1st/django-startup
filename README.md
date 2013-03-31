@@ -21,6 +21,13 @@ What's inside?
 Do you have free time to help us?
 ==========
 
-Clone repo, make changes and create pull request. Or, attach diff to our issue tracker. Also, you can help us with ideas or report bigs. Click to [Issues](https://github.com/1st/django-startup/issues) in top side of this page.
+You can help us with:
+* Clone repo and make changes. Then create [pull request](https://github.com/1st/django-startup/pulls)
+* Attach diff of your changes to our [issue tracker](https://github.com/1st/django-startup/issues)
+* You can help us with ideas. Describe it in our [issue tracker](https://github.com/1st/django-startup/issues)
+* Report about bags that you found. Create bug report in [issue tracker](https://github.com/1st/django-startup/issues)
+* Do you have time to solve already described task? Select your task from [issue tracker](https://github.com/1st/django-startup/issues) and solve it. All your ideas and questions attach to exisitng task, and we will disscuss with you about best solution for this task
+* Star project, and tell you friends about this project, if you like it :-)
 
-Star project, if you like it.
+Thank you!
+- Anton Danilchenko
