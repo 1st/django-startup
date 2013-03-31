@@ -2,7 +2,7 @@
 '''
 List of project specific views, that can't be placed in a separate application.
 '''
-from apps.decorators import render_to
+from apps.project.decorators import render_to
 
 
 @render_to('index.html')

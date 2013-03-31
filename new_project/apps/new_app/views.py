@@ -4,7 +4,7 @@ List of application specific views.
 
 Replace "new_app" to your application name.
 '''
-from discounts.decorators import render_to
+from apps.project.decorators import render_to
 
 
 @render_to('new_app/index.html')

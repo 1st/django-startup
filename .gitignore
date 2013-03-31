@@ -1,4 +1,9 @@
+### Django ###
+ 
 *.log
 *.pot
 *.pyc
 local_settings.py
+
+### MacOS ###
+.DS_Store
