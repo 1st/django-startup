@@ -8,6 +8,8 @@ When you crate new application, you need to do:
  - uncomment this line (delete initial "#" symbol)
 '''
 from django.conf.urls import patterns, include, url
+from django.conf.urls.static import static
+from django.conf import settings
 from django.contrib import admin
 admin.autodiscover()
 
@@ -17,4 +19,4 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     # copy this line for each new application that you have
     # url(r'^new_app/', include('apps.new_app.urls'), name='new_app'),
-)
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,3 +1,7 @@
+### Project specific ###
+
+media/*
+
 ### Django ###
  
 *.log
