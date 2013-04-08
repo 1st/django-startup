@@ -1,6 +1,8 @@
 ### Project specific ###
 
 media/*
+static_export/*
+apps/project/settings_local.py
 
 ### Django ###
  
