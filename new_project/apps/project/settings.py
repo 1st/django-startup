@@ -5,6 +5,8 @@ Django settings for apps project.
 What you need to do:
  - set username and password for mysql database
  - when you need to activate new application - place it in the end of INSTALLED_APPS
+ - on your real server you can create file "apps/project/settings_local.py" where
+   redefine some settings from current file
 '''
 
 #
@@ -176,3 +178,8 @@ LOGGING = {
         },
     }
 }
+
+try:
+    from apps.project.settings_local import *
+except ImportError:
+    pass
