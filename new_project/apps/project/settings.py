@@ -35,6 +35,12 @@ DATABASES = {
     }
 }
 
+ADMINS = (
+    # ('Your Name', 'your_email@example.com'),
+)
+
+MANAGERS = ADMINS
+
 # turn off on production server!
 DEBUG = TEMPLATE_DEBUG = True
 
@@ -53,11 +59,10 @@ LANGUAGE_CODE = 'en-us'
 # ADVANCED SETTINGS
 #
 
-ADMINS = (
-    # ('Your Name', 'your_email@example.com'),
-)
+import os.path
 
-MANAGERS = ADMINS
+# get path to project root directory (where located apps, media, static, templates directories)
+PROJECT_DIR = os.path.dirname((os.path.dirname((os.path.dirname(__file__)))))
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.4/ref/settings/#allowed-hosts
@@ -78,7 +83,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/home/media/media.lawrence.com/media/"
-MEDIA_ROOT = 'media'
+MEDIA_ROOT = os.path.join(PROJECT_DIR, 'media')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -100,7 +105,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    'static',
+    os.path.join(PROJECT_DIR, 'static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -131,7 +136,7 @@ MIDDLEWARE_CLASSES = (
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'apapps.projectps.urls'
+ROOT_URLCONF = 'apps.project.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'apps.project.wsgi.application'
@@ -140,7 +145,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    'templates',
+    os.path.join(PROJECT_DIR, 'templates'),
 )
 
 # A sample logging configuration. The only tangible logging
