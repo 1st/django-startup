@@ -7,6 +7,13 @@ Pretty and easy to use tools that helps you start project not from scratch, but 
 
 For each version of Django framework we have separate branch that name equal to Django version (1.4, 1.5, 1.6).
 
+
+Would like to try it?
+----------
+
+Read [Quick Start guide](https://github.com/1st/django-startup/wiki) and run project in 5 minutes. It's possible, now.
+
+
 What's inside?
 ----------
 
