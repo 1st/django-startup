@@ -20,7 +20,7 @@ admin.autodiscover()
 
 
 urlpatterns = patterns('',
-    url(r'^$', 'apps.views.index', name='index'),
+    url(r'^$', 'apps.project.views.index', name='index'),
     url(r'^admin/', include(admin.site.urls)),
     # copy this line for each new application that you have
     # url(r'^new_app/', include('apps.new_app.urls'), namespace='new_app'),
