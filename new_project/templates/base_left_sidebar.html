@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block page_container %}
+  <div class="span3 page-sidebar">
+    <div data-spy="nav-collapse collapse">
+      {% block page_sidebar %}{% endblock %}
+    </div>
+  </div>
+  <div class="span9 page-content">
+    {% block page_content %}{% endblock %}
+  </div>
+{% endblock %}
