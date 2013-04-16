@@ -10,6 +10,47 @@ What you need to do:
 '''
 
 #
+# CALCULATIONS
+#
+
+import sys
+import os.path
+
+# get path to project root directory (where located apps, media, static, templates directories)
+PROJECT_DIR = os.path.dirname((os.path.dirname((os.path.dirname(__file__)))))
+
+# add path to libs
+sys.path.insert(0, os.path.join(PROJECT_DIR, 'apps', 'project', 'libs'))
+
+
+#
+# LOAD USER SETTING
+#
+
+
+import yaml
+
+USER_CONFIG = yaml.load(open(os.path.join(PROJECT_DIR, 'config.yaml')))
+
+
+def get_apps():
+    apps = []
+    for conf in USER_CONFIG['apps'] or []:
+        app_name = conf.keys()[0] if type(conf) == dict else conf
+        apps.append(app_name)
+    return tuple(apps)
+
+
+def get_apps_with_urls():
+    apps = filter(lambda x: type(x) == dict, USER_CONFIG['apps'] or [])
+    apps = [mapping.items()[0] for mapping in apps]
+    return apps
+
+
+APPS_WITH_URLS = get_apps_with_urls()
+
+
+#
 # MAIN SETTINGS
 #
 
@@ -21,9 +62,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
-    # copy line and change "new_app" to real application name
-    # 'apps.new_app',
-)
+) + get_apps()
 
 DATABASES = {
     'default': {
@@ -44,7 +83,8 @@ ADMINS = (
 MANAGERS = ADMINS
 
 # turn off on production server!
-DEBUG = TEMPLATE_DEBUG = True
+DEBUG = True
+TEMPLATE_DEBUG = True
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -60,11 +100,6 @@ LANGUAGE_CODE = 'en-us'
 #
 # ADVANCED SETTINGS
 #
-
-import os.path
-
-# get path to project root directory (where located apps, media, static, templates directories)
-PROJECT_DIR = os.path.dirname((os.path.dirname((os.path.dirname(__file__)))))
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.4/ref/settings/#allowed-hosts

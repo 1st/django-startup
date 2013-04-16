@@ -1,0 +1,21 @@
+apps:
+ # - path.to.app
+ #   OR
+ # - path.to.app: url_prefix/
+
+settings:
+ - ADMINS: ["admin_email@gmail.com"]
+ - DATABASES:
+     default:
+       ENGINE: django.db.backends.mysql
+       NAME: db_name
+       USER: db_user_name
+       PASSWORD: 
+ - TIME_ZONE: America/Chicago
+ - LANGUAGE_CODE: en-us
+ - DEBUG: true
+
+top_menu:
+ - products_list
+ - news
+ - about

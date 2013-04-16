@@ -19,9 +19,19 @@ from django.contrib import admin
 admin.autodiscover()
 
 
-urlpatterns = patterns('',
+urlpatterns = patterns(
+    '',
     url(r'^$', 'apps.project.views.index', name='index'),
     url(r'^admin/', include(admin.site.urls)),
-    # copy this line for each new application that you have
-    # url(r'^new_app/', include('apps.new_app.urls'), namespace='new_app'),
 ) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+# add user apps that defined in config.yaml
+for app_path, url_prefix in settings.APPS_WITH_URLS:
+    app_name = app_path.split('.')[-1]
+    urlpatterns += patterns(
+        '',
+        url(r'^{}'.format(url_prefix or ''),
+            include('{}.urls'.format(app_path)),
+            name=app_name),
+    )
