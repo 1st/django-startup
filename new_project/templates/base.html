@@ -26,9 +26,9 @@
       <div class="container hidden-phone">
         <a class="brand" href="/">Website.com</a>
         <ul class="nav">
-          <li{% if active_menu == 'products' %} class="active"{% endif %}><a href="{% url index %}">Products</a></li>
-          <li{% if active_menu == 'news' %} class="active"{% endif %}><a href="{% url index %}">News</a></li>
-          <li{% if active_menu == 'about' %} class="active"{% endif %}><a href="{% url index %}">About us</a></li>
+          <li{% if active_menu == 'products' %} class="active"{% endif %}><a href="{% url main:index %}">Products</a></li>
+          <li{% if active_menu == 'news' %} class="active"{% endif %}><a href="{% url main:index %}">News</a></li>
+          <li{% if active_menu == 'about' %} class="active"{% endif %}><a href="{% url main:index %}">About us</a></li>
         </ul>
         <form class="navbar-form pull-right">
           <button class="btn btn-success btn-small pull-right" type="button">Login</button>
@@ -45,9 +45,9 @@
         </a>
         <div class="nav-collapse in collapse">
           <ul class="nav">
-            <li{% if active_menu == 'products' %} class="active"{% endif %}><a href="{% url index %}">Products</a></li>
-            <li{% if active_menu == 'news' %} class="active"{% endif %}><a href="{% url index %}">News</a></li>
-            <li{% if active_menu == 'about' %} class="active"{% endif %}><a href="{% url index %}">About us</a></li>
+            <li{% if active_menu == 'products' %} class="active"{% endif %}><a href="{% url main:index %}">Products</a></li>
+            <li{% if active_menu == 'news' %} class="active"{% endif %}><a href="{% url main:index %}">News</a></li>
+            <li{% if active_menu == 'about' %} class="active"{% endif %}><a href="{% url main:index %}">About us</a></li>
           </ul>
         </div>
       </div>

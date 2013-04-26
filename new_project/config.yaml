@@ -1,21 +1,29 @@
 apps:
- # - path.to.app
- #   OR
- # - path.to.app: url_prefix/
+ - apps.main: /
+ - apps.blog: blog/
+ #   You can define app name without mapping it to url
+ # - apps.app_name
+ #   OR map this app to url
+ # - apps.app_name: url_prefix/
 
 settings:
- - ADMINS: ["admin_email@gmail.com"]
- - DATABASES:
-     default:
-       ENGINE: django.db.backends.mysql
-       NAME: db_name
-       USER: db_user_name
-       PASSWORD: 
- - TIME_ZONE: America/Chicago
- - LANGUAGE_CODE: en-us
- - DEBUG: true
+  ADMINS: ["admin_email@gmail.com"]
+  DATABASES:
+    default:
+      ENGINE: django.db.backends.mysql
+      NAME: database_name
+      USER: user_name
+      PASSWORD: 
+  TIME_ZONE: America/Chicago
+  LANGUAGE_CODE: en-us
+  DEBUG: true
+
+
+# under development (not working yet)
 
 top_menu:
  - products_list
  - news
  - about
+
+# TODO: add section for local settings
