@@ -20,7 +20,7 @@ What's inside?
 * **Python decorators:** render_to, ajax
 * **Django templates:** build on Twitter Bootstrap
 * **Users support:** registration via email, nic name without email, or via social authentication
-* **CSS, JS:** jQuery, SASS, [django-pipeline](http://django-pipeline.readthedocs.org)
+* **CSS, JS:** jQuery, SASS, [CoffeeScript](http://coffeescript.org), [django-pipeline](http://django-pipeline.readthedocs.org)
 * **AJAX support:** RESTful API, JSON-RPC
 * read more in our [wiki](https://github.com/1st/django-startup/wiki)
 
