@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from django.http import Http404
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.http import HttpResponse, HttpResponseBadRequest
@@ -24,6 +25,9 @@ def render_to(template):
 
     Parameters:
      - template: template name to use
+
+    @url https://github.com/1st/django-startup/
+    @author Anton Danilchenko <anton.danilchenko@me.com>
     """
     def _renderer(func):
         def _wrapper(request, *args, **kw):
@@ -41,9 +45,13 @@ def ajax_request(func):
     """
     AJAX request decorator
 
+    Example:
     >>> @ajax_request
     >>> def my_view(request):
     >>>     return {'key': 'value', 'key2': 'value2'}
+
+    @url https://github.com/1st/django-startup/
+    @author Anton Danilchenko <anton.danilchenko@me.com>
     """
     def wrap(request, *args, **kwargs):
         if not request.is_ajax():
@@ -55,3 +63,34 @@ def ajax_request(func):
     wrap.__doc__ = func.__doc__
     wrap.__name__ = func.__name__
     return wrap
+
+
+def login_required(function=None, message=None):
+    """
+    Decorator for views that checks that the user is logged in,
+    or show error page with message.
+
+    Example (we can use any of this forms of decorator):
+    >>> # 1. without parameters
+    >>> @login_required
+    >>> def my_function(request):
+    >>>     pass
+    >>>
+    >>> # 2. with parameters
+    >>> @login_required(message='This page available only for logged in users')
+    >>> def my_function(request):
+    >>>     pass
+
+    @url https://github.com/1st/django-startup/
+    @author Anton Danilchenko <anton.danilchenko@me.com>
+    """
+    def real_decorator(func):
+        def _wrapper(request, *args, **kwargs):
+            if request.user.is_authenticated():
+                return func(request, *args, **kwargs)
+            raise Http404(message)
+        return _wrapper
+
+    if function:
+        return real_decorator(function)
+    return real_decorator
